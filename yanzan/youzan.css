@@ -49,45 +49,7 @@
     .biaoti a {
       text-decoration: none;
     }
-    div{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-    }
-    .nav{
-    float:right;
-    zoom: 1;
     
-    }
-    .shouye{
-    color: red;
-    }
-    .header-container .nav-list .product-dropdown {
-      z-index: 200;
-    }
-    .li1{
-    margin-right: 16px;
-    padding: 0px 20px;
-    text-align: center;
-    float: left;
-    list-style: none;
-    display: inline-block;
-    height: 70px;
-    line-height: 70px;
-    padding: 0px 20px;
-    }
-    .shouye{
-      text-decoration: none;
-      text-decoration-line: none;
-      text-decoration-style: initial;
-      text-decoration-color: initial;
-    }
-    .biaoti ul{
-      list-style: none;
-    }
     ul {
     margin: 0;
     padding: 0;
@@ -102,6 +64,9 @@
     font: inherit;
     font-size: 100%;
     vertical-align: baseline; 
+    text-align: -webkit-match-parent;
+
+
  }
  a{
   margin: 0;
@@ -111,17 +76,25 @@
   font-size: 100%;
   vertical-align: baseline;
  }
- .nav > li{
-  float: left;
-  display: inline-block;
-  height: 70px;
-  line-height: 70px;
-  padding: 0px 20px;
- }
-    .lia{
-    text-decoration: none;
-    color: #2c3a46;
-    }
+ .header .biaoti .nav-list {
+  float: right;
+  zoom: 1;
+}
+.header ul{
+  list-style: none;
+}
+
+.header .biaoti .nav-list > li .shouye {
+  text-decoration: none;
+  color: #FF4444 ;
+}
+
+.header .biaot1.nav-list .li1{
+  z-index: 200;
+}
+.header-container.biaoti.nav-list .li1 {
+  margin-right: 16px;
+}
  .caret:after,   .caret:before {
       content: ' ';
       height: 0;
@@ -131,32 +104,29 @@
       left: 5px;
       border: 5px solid transparent; 
     }
- .header-container .caret:before {
+   .biaoti .caret:before {
       border-top-color: #ffffff;
       top: -9px;
       z-index: 2; 
     }
- .header-container .caret:after {
+   .biaoti .caret:after {
       border-top-color: #333;
       top: -7px;
       z-index: 1; 
+    } 
+  .product-center:hover{
+    color: red ;
+  } 
+  .lia:hover{
+      color: red ;
     }
-   .product-center:hover{
-      color: red;
-    }
-    .li2{
+    .header .biaoti .dl {
     padding: 0px 0px 0px 20px;
-    float: left;
-    display: inline-block;
-    height: 70px;
-    line-height: 70px;
+
     }
-    .li3{
+    .header .biaoti .zc{
     padding: 0px 0px 0px 10px;
-    float: left;
-    display: inline-block;
-    height: 70px;
-    line-height: 70px;
+
     }
     .login{
     width: 80px;
@@ -184,41 +154,38 @@
     .caret{
     position: relative;
     display: inline-block;
+    background-image:url(E:/20zouyu/yanzan/tupian/sanjiao.png);
     }
-    .baner{
+   #aaa{
     height: 420px;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-    }
+    position: relative;
+  }
     .swiper{
     background-image: url(E:/20zouyu/yanzan/tupian/topbanner1@2x.jpg);
     position: absolute;
-    width: 2000px;
+    width: 1519px;
     height: 420px;
     background-size: cover;
     background-position: 100%;
+
     }
     .content{
-    position: absolute;
-    width: 1100px;
-    height:420px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+      position: absolute;
+      width: 1100px;
+      height:420px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
     }
-    .h3{
+    .yzwsc{
     margin-top: 100px;
     display: block;
     font-size: 2.53em;
     }
-    .h31{
+    .ygrj{
     font-size: 20px;
     color: #777;
     margin-bottom: 55px;
@@ -240,3 +207,131 @@
     margin-top: 15px;
     display: block;
     }
+   .nav-list > li {
+      float: left;
+      display: inline-block;
+      height: 70px;
+      line-height: 70px;
+      padding: 0px 20px;
+    }
+    .sj{
+      width: 1000px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+   }
+   .sjz{
+    position: absolute;
+    top: 50%;
+    right: 1130px;
+    left: auto;
+    width: 60px;
+    height: 60px;
+    background-size: 100% 100%;
+    background-image: url(E:/20zouyu/yanzan/tupian/L.png);
+    margin-top: -22px;
+    z-index:10;
+    cursor:pointer;
+    background-position: 50%;
+    background-repeat: no-repeat;
+   }
+   .sjy{
+    position: absolute;
+    top:50%;
+    left: 1130px;
+    right: auto;
+    width: 60px;
+    height: 60px;
+    background-size: 100% 100%;
+    background-image:url(E:/20zouyu/yanzan/tupian/R.png);
+    margin-top: -22px;
+    z-index:10;
+    cursor:pointer;
+    background-position: 50%;
+    background-repeat: no-repeat
+   }
+   .container{
+    margin: 28px 0px;
+   }
+   .wrapper {
+    max-width: 1100px;
+    height: 620px;
+    margin: 0 auto;
+    position: relative;
+    zoom: 1;
+}
+.content{
+ 
+
+}
+.fa  {
+  
+    font-size: 28px;
+    color: #333;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 90px;
+
+
+ }
+ .wcard-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+  height: 446px;
+}
+.wcard-section {
+  margin-bottom: 28px;
+}
+ .bianc {
+  color: #333;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: PingFangSC-Medium;
+  letter-spacing: 0;
+}
+ .yuany {
+  margin-top: 5px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.mfsy{
+
+ background-color: #38f;
+ color: #fff;
+ font-size: 14px;
+padding: 10px 42px;
+border-radius: 2px;
+display: inline-block;
+cursor: pointer;
+}
+.gnjs{
+  border: 1px solid #38f;
+    color: #38f;
+    padding: 10px 42px;
+    font-size: 14px;
+    border-radius: 2px;
+    display: inline-block;
+    text-decoration: none;
+}
+.gd{
+  width: 615px;
+
+}
+.wcard-left{
+
+  flex: 1;
+
+}
