@@ -1,25 +1,23 @@
 .header{
-  width: 100%;
-  min-width: 1100px;
-  height: auto;
-  position: relative;
-  background: #ffffff;
-  border-bottom: 1px solid #ededed;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-  z-index: 200;
-  transition: all 0.5s ease-in;
-    }
+      width: 100%;
+      min-width: 1100px;
+      height: auto;
+      background: #ffffff;
+      border-bottom: 1px solid #ededed;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+      z-index: 200;
+
+  }
     body {
-      display: block;
       margin: 0px;
   }
   
     .biaoti{
-      box-sizing: border-box;
+
       margin: 0 auto;
       width: 1100px;
       height: 70px;
-      zoom: 1
+
     }
     .picture{
     display: inline-block;
@@ -27,7 +25,7 @@
     height: 25px;
     margin-top: 22.5px;
     background-size: 72px 25px;
-    background-image: url(E:/20zouyu/yanzan/tupian/8fc4cd6f771897cbf9663166a63a5302.png);
+    background-image: url(8fc4cd6f771897cbf9663166a63a5302.png);
     }
     .link{
     float: left;
@@ -46,54 +44,30 @@
     margin-left: 10px;
     margin-bottom: -1px;
     }
-    .biaoti a {
-      text-decoration: none;
-    }
-    
+
     ul {
     margin: 0;
     padding: 0;
     border: 0;
-    font: inherit;
     font-size: 100%;
-    vertical-align: baseline;
   }
   li{
     margin: 0;
     border: 0;
-    font: inherit;
     font-size: 100%;
-    vertical-align: baseline; 
-    text-align: -webkit-match-parent;
-
-
  }
  a{
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   font-size: 100%;
-  vertical-align: baseline;
  }
  .header .biaoti .nav-list {
   float: right;
-  zoom: 1;
-}
-.header ul{
-  list-style: none;
 }
 
 .header .biaoti .nav-list > li .shouye {
-  text-decoration: none;
   color: #FF4444 ;
-}
-
-.header .biaot1.nav-list .li1{
-  z-index: 200;
-}
-.header-container.biaoti.nav-list .li1 {
-  margin-right: 16px;
 }
  .caret:after,   .caret:before {
       content: ' ';
@@ -120,15 +94,15 @@
   .lia:hover{
       color: red ;
     }
-    .header .biaoti .dl {
+    .header .biaoti .dl1{
     padding: 0px 0px 0px 20px;
-
+/* 内边距 */
     }
-    .header .biaoti .zc{
+    .header .biaoti .zc1{
     padding: 0px 0px 0px 10px;
 
     }
-    .login{
+    .dl{
     width: 80px;
     height: 30px;
     line-height: 28px;
@@ -138,9 +112,9 @@
     text-align: center;
     border-radius: 2px;
     box-sizing: border-box;
-    cursor: pointer;
+
     }
-    .login2{
+    .zc{
     width: 80px;
     height: 30px;
     line-height: 30px;
@@ -148,36 +122,43 @@
     background-color: #2B90ED;
     color: #ffffff;
     text-align: center;
-    border-radius: 2px;
-    cursor: pointer;
+
+    }
+    .dl:hover{
+      color:#ffffff;
+      background-color:#2B90ED;
+    }
+    .zc:hover{
+      background-color:rgb(72, 153, 230);
     }
     .caret{
     position: relative;
     display: inline-block;
-    background-image:url(E:/20zouyu/yanzan/tupian/sanjiao.png);
+    /* 规定元素应该生成的框的类型 */
+    }
+    .caret:hover{
+      color:red;
     }
    #aaa{
     height: 420px;
-    width: 100%;
-    position: relative;
   }
     .swiper{
-    background-image: url(E:/20zouyu/yanzan/tupian/topbanner1@2x.jpg);
+    background-image: url(topbanner1@2x.jpg);
     position: absolute;
+    /* 绝对定位 */
     width: 1519px;
     height: 420px;
     background-size: cover;
+    /* 规定背景图像的尺寸 */
     background-position: 100%;
-
+    /* 设置背景图像的起始位置 */
     }
     .content{
       position: absolute;
       width: 1100px;
       height:420px;
-      top: 0;
       left: 0;
       right: 0;
-      bottom: 0;
       margin: auto;
     }
     .yzwsc{
@@ -196,10 +177,15 @@
     line-height: 18px;
     display: inline-block;
     text-align: center;
+    /* 水平对齐 */
     box-sizing: border-box;
+    /* 边框 */
     background: #38f;
     padding: 12px 42px;
     color: #fff;
+    }
+    .button:hover{
+    background-color:rgb(76, 76, 245);
     }
     .font{
     font-size: 14px;
@@ -216,7 +202,6 @@
     }
     .sj{
       width: 1000px;
-      height: 100%;
       position: absolute;
       top: 0;
       right: 0;
@@ -228,65 +213,41 @@
     position: absolute;
     top: 50%;
     right: 1130px;
-    left: auto;
     width: 60px;
     height: 60px;
-    background-size: 100% 100%;
-    background-image: url(E:/20zouyu/yanzan/tupian/L.png);
+    background-image: url(L.png);
     margin-top: -22px;
-    z-index:10;
-    cursor:pointer;
-    background-position: 50%;
-    background-repeat: no-repeat;
    }
    .sjy{
     position: absolute;
     top:50%;
     left: 1130px;
-    right: auto;
     width: 60px;
     height: 60px;
-    background-size: 100% 100%;
-    background-image:url(E:/20zouyu/yanzan/tupian/R.png);
+    background-image:url(R.png);
     margin-top: -22px;
-    z-index:10;
-    cursor:pointer;
-    background-position: 50%;
-    background-repeat: no-repeat
    }
    .container{
     margin: 28px 0px;
    }
    .wrapper {
     max-width: 1100px;
-    height: 620px;
     margin: 0 auto;
-    position: relative;
-    zoom: 1;
 }
-.content{
- 
 
-}
 .fa  {
   
     font-size: 28px;
-    color: #333;
-    letter-spacing: 0;
     text-align: center;
     line-height: 40px;
+    /* 行高 */
     padding-top: 90px;
 
 
  }
  .wcard-content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 70px;
-  height: 446px;
 }
 .wcard-section {
   margin-bottom: 28px;
@@ -294,17 +255,12 @@
  .bianc {
   color: #333;
   font-size: 18px;
-  line-height: 24px;
-  font-family: PingFangSC-Medium;
-  letter-spacing: 0;
-}
+ }
  .yuany {
   margin-top: 5px;
-  font-family: PingFangSC-Regular;
   font-size: 14px;
+  /* 文字大小 */
   color: #999;
-  letter-spacing: 0;
-  line-height: 24px;
 }
 
 .mfsy{
@@ -313,25 +269,25 @@
  color: #fff;
  font-size: 14px;
 padding: 10px 42px;
-border-radius: 2px;
 display: inline-block;
-cursor: pointer;
 }
 .gnjs{
-  border: 1px solid #38f;
+    border: 1px solid #38f;
+    /* 边框 */
     color: #38f;
     padding: 10px 42px;
     font-size: 14px;
-    border-radius: 2px;
     display: inline-block;
-    text-decoration: none;
+    /* 行变块 */
 }
 .gd{
   width: 615px;
-
 }
 .wcard-left{
-
   flex: 1;
-
+  /* flex-grow 设置或检索弹性盒子的扩展比率, 
+  /* flex-shrink默认值为1，如果没有显示定义该属性， 
+  将会自动按照默认值1在所有因子相加之后计算比率来进行空间收缩。 */
+  /* flex-basis 用于设置或检索弹性盒伸缩基准值
+   默认值为0 1 auto。后两个属性可选。 */
 }
